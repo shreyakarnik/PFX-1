@@ -205,12 +205,15 @@
     margin-top:8.4px; font-size:14px; color:var(--gray); background:#fff;
     border:1.5px solid #D8DADE; border-radius:8px; padding:7.2px 9.6px; display:inline-block;
   }
+  .pre-actions-note{
+    font-size:14px; color:var(--gray); margin-top:16px; margin-bottom:4px;
+  }
   .form-actions{display:flex; gap:8.4px; margin-top:12px;}
   form.inquiry-form .form-actions .btn-primary,
   form.inquiry-form .form-actions .btn-outline{
     width:auto; flex:1; margin-top:0; text-align:center;
   }
-  .more-info-panel{display:none; margin-top:4.8px;}
+  .more-info-panel{display:none; margin-top:32px;}
   .more-info-panel.open{display:block;}
 
   @media (max-width: 700px){
@@ -233,7 +236,7 @@
   <nav class="links">
     <a href="#">Explore Kiosks</a>
     <a href="#">Case Study</a>
-    <a href="#">ROI Calculator</a>
+    <a href="roi_calculator.html">ROI Calculator</a>
     <a href="#" class="talk">Let's Talk!</a>
   </nav>
 </header>
@@ -427,6 +430,8 @@
         </div>
       </div>
 
+      <p class="pre-actions-note">The more information you provide, the easier it is for us to assist you.</p>
+
       <div class="form-actions">
         <button type="submit" class="btn-primary">Submit Inquiry</button>
         <button type="button" class="btn-outline" id="moreInfoToggle" onclick="toggleMoreInfo(this)">+ Add More Information</button>
@@ -528,6 +533,8 @@
           <input type="checkbox" id="consent-sms" name="consent_sms">
           <label for="consent-sms">I agree to receive SMS communications</label>
         </div>
+
+        <button type="submit" class="btn-primary" style="width:100%; margin-top:20px; text-align:center;">Submit Inquiry</button>
 
       </div>
     </form>
